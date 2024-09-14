@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LauZon!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="laugo.jpg">
+        </div>
+        <div class="form-container">
+            <h1>Welcome!</h1>
+            <p>Please enter Your details</p>
+            <form>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="signin">Sign In</button>
+                    <button type="button" class="btn btn-outline-primary" id="signup">Signup</button>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <span class="show-password" onclick="togglePasswordVisibility()">Show Password</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Continue</button>
+                <p>Visit me at;</p>
+                <div class="social-login">
+                    <a class="Tiktok"><img src="tt.jpg" alt="Google"></a>
+                    <a class="Instagram"><img src="ig.jpeg" alt="Apple"></a>
+                    <a class="Facebook"><img src="fb.jpg" alt="Facebook"></a>
+                </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="pl.jpg">
+        </div>
+    </div>
+    <script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var showPasswordButton = document.querySelector(".show-password");
+    
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            showPasswordButton.textContent = "Hide Password";
+        } else {
+            passwordInput.type = "password";
+            showPasswordButton.textContent = "Show Password";
+        }
+    }</script>
+</body>
+</html>
